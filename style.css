@@ -1,0 +1,61 @@
+/* Your board style here */
+h1 p{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 80px;
+}
+
+body {
+  background-color: #DBD8D4;
+}
+
+.racer_table {
+  margin: 0 auto;
+}
+
+.racer_table td {
+  height: 150px;
+  width: 150px;
+  table-layout: fixed;
+}
+
+.racer_table td.active {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  border: 1px solid rgba(220,220,240, 0.9);
+  opacity: 0.7;
+}
+
+.racer_table td.active:hover {
+  filter: alpha(opacity=50);
+  opacity: 0.9;
+}
+
+
+#player1_race td.active {
+  background-image: url("images/player_1.png");
+}
+#player2_race td.active {
+  background-image: url("images/player_2.png");
+}
+
+#goal-image1{
+  background: url("images/palmstowerone.png") no-repeat center center;
+  background-size: cover;
+}
+
+#goal-image2{
+  background: url("images/palmstowertwo.png") no-repeat center center;
+  background-size: cover;
+}
+
+.viagra{
+  background: url("images/viagra.png") no-repeat center center;
+  background-size: cover;
+}
+
+.dollar{
+  background: url("images/dollar.png") no-repeat center center;
+  background-size: cover;
+}
+
