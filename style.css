@@ -1,11 +1,18 @@
 /* Your board style here */
-h1 p{
+h1, p{
   font-family: 'Montserrat', sans-serif;
-  font-size: 80px;
+  font-size: 30px;
+  font-weight: bold;
+  color: #070971;
 }
 
 body {
-  background-color: #DBD8D4;
+  background-color: #F8F7F7;
+}
+
+.btn {
+  margin: 5px;
+  padding: 10px;
 }
 
 .racer_table {
@@ -23,14 +30,32 @@ body {
   background-size: cover;
   background-position: center center;
   border: 1px solid rgba(220,220,240, 0.9);
-  opacity: 0.7;
+  opacity: 0.9;
 }
 
-.racer_table td.active:hover {
+.hover{
   filter: alpha(opacity=50);
   opacity: 0.9;
 }
 
+h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 15px;
+  padding-bottom: 5px;
+  font-weight: bold;
+  color: #070971;
+  margin: 0px;
+}
+
+.container-fluid {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+}
+
+#controllers {
+  display: flex;
+  justify-content: center;
+}
 
 #player1_race td.active {
   background-image: url("images/player_1.png");
@@ -57,5 +82,24 @@ body {
 .dollar{
   background: url("images/dollar.png") no-repeat center center;
   background-size: cover;
+}
+
+@media (max-width: 960px) {
+ /* For a screen < 960px, this CSS will be read */
+ .container {
+   width: 700px;
+ }
+}
+@media (max-width: 720px) {
+ /* For a screen < 720px, this CSS will be read */
+ .container {
+   width: 500px;
+ }
+}
+@media (max-width: 540px) {
+ /* For a screen < 540px, this CSS will be read */
+ .container {
+   width: 300px;
+ }
 }
 
