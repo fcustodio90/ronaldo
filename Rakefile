@@ -7,7 +7,11 @@ task :mocha do
 end
 
 task :webpack do
-  system "../../node_modules/.bin/webpack-dev-server"
+  system "./node_modules/.bin/webpack-dev-server"
+end
+
+task :build do
+  system "./node_modules/.bin/webpack --output build/application.js"
 end
 
 task default: [:eslint]
